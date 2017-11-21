@@ -5,236 +5,316 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-  <header class = "main-header">
-      <nav class = "header-top-navigation">
-        <a class="main-header-logo"> <img src="http://placehold.it/100x50" width="150" height="100" alt="Логотип магазина «Техномарт»"> </a>
-        <span class = "search-header-top-navigation">Поиск</span>
-        <span class = "favorites-header-top-navigation"><a href="#">Закладки</a></span>
-        <span class = "cart-header-top-navigation"><a href="#">Корзина</a></span>
-        <span class = "order-header-top-navigation"><a href="#">Оформить заказ</a></span>
-      </nav>
-		  <section class = "important-information">
-        <strong class = "important-information-description">Интернет магазин строительных материалов и инструсентов для ремонта </strong>
-        <p class = "important-information-tel">
-		+7 (812) 555-05-55
-		    </p>
-		    <p class = "important-information-adress">
-		г. Санкт-Петербург, ул. Б.Конюшенная д. 19/8
-		    </p>
-        <ul class = "user-navigation">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Регистрация</a></li>
-		    </ul>
-	    </section>
-      <nav class = "header-bottom-navigation">
-		     <ul class = "header-bottom-navigation-site">
-           <li><a href="#">Главная</a></li>
-           <li><a href="#">Компания</a></li>
-           <li><a href="#">Каталог</a></li>
-           <li><a href="#">Новости</a></li>
-           <li><a href="#">Спецпредложения</a></li>
-           <li><a href="#">Доставка</a></li>
-           <li><a href="#">Контакты</a></li>
-		     </ul>
-       </nav>
-	 </header>
-   <main class = "container">
-	    <ul class="breadcrumbs">
-	       <li><a href="#">Каталог</a></li>
-         <li><a href="#">Инструмент</a></li>
-         <li class="breadcrumbs-current">Перфораторы</li>
-      </ul>
-	    <h1 class="page-title">Перфораторы</h1>
-      <section class="filters">
+    <header class = "main-header">
+        <div class = "header-top-navigation">
+          <a class="main-header-logo"> <img src="http://placehold.it/100x50" width="150" height="100" alt="Логотип магазина «Техномарт»"> </a>
+          <span class = "search-header-top-navigation">Поиск</span>
+          <ul class = "order-tools">
+            <li><a href="#">Закладки</a> </li>
+            <li><a href="#">Корзина</a></li>
+            <li><a href="#">Оформить заказ</a></li>
+          </ul>
+        </div>
+  		  <div class = "header-information">
+          <strong class = "header-information-description">Интернет магазин строительных материалов и инструсентов для ремонта </strong>
+          <p class = "important-information-tel">
+  		    +7 (812) 555-05-55
+  		    </p>
+  		    <p class = "header-information-adress">
+  		    г. Санкт-Петербург, ул. Б.Конюшенная д. 19/8
+          </p>
+        </div>
+        <div class = "user-navigation">
+          <span> Равшан Джамшутович </span>
+          <ul class = "user-navigation-list">
+            <li><a href="#">Мои заказы</a></li>
+            <li><a href="#">Личный кабинет</a></li>
+  		    </ul>
+        </div>
+        <nav class = "header-bottom-navigation">
+  		     <ul class = "header-bottom-navigation-site">
+             <li><a href="#">Главная</a></li>
+             <li><a href="#">Компания</a></li>
+             <li><a href="#">Каталог</a></li>
+             <li><a href="#">Новости</a></li>
+             <li><a href="#">Спецпредложения</a></li>
+             <li><a href="#">Доставка</a></li>
+             <li><a href="#">Контакты</a></li>
+  		     </ul>
+         </nav>
+  	 </header>
+     <main class = "container">
+	      <ul class="breadcrumbs">
+	         <li><a href="#">Каталог</a></li>
+           <li><a href="#">Инструмент</a></li>
+           <li class="breadcrumbs-current">Перфораторы</li>
+        </ul>
+	      <h1 class="page-title">Перфораторы</h1>
+        <section class="filters">
+          <h2 class = "visually-hidden"> Фильтры </h2>
         <!-- Здесь будутт формы -->
-      </section>
-	    <section class="sorting">
-        <!-- Здесь будутт формы -->
-      </section>
-	    <section class ="catalog">
+        </section>
+	      <section class ="catalog">
+          <h2 class = "visually-hidden"> Каталог товаров </h2>
+          <div class = "sorting">
+            <span class = "sorting-title"> Сортировка </span>
+            <ul class= "sorting-list">
+              <li>По цене</li>
+              <li>По типу</li>
+              <li>По функционалу</li>
+              <li><span class ="Ascending"> "По возрастанию" </span></li>
+              <li><span class ="Descending"> "По убыванию" </span> </li>
+            </ul>
+         </div>
 	       <ul class="catalog-list">
            <li class = "catalog-item">
              <h3>
+               <span class="catalog-item-category">
+               Перфоратор BOSH
+               </span>
                <span class="catalog-item-title">
-				       Перфоратор BOSH 12345
-				       </span>
-			       </h3>
-			       <span class ="catalog-item-discount"> 32 500 </span>
-			       <p>
-               <a class="catalog-item-price-button" href="#">25 500</a>
-			       </p>
-			       <p>
-               <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
-			       </p>
-		       </li>
+               BFG 3000
+               </span>
+               </h3>
+               <ul class ="actions">
+                  <li class = "actionn-buy"> <a class ="visually-hidden" href = "#"> Купить </a> </li>
+                  <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
+                </ul>
+                <p>
+                  <span class ="catalog-item-discount"> 22 500 Р.</span>
+                  <a class="catalog-item-price-button" href="#">15 500 Р.</a>
+               </p>
+               <p>
+                  <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
+               </p>
+           </li>
            <li class = "catalog-item">
              <h3>
+               <span class="catalog-item-category">
+               Перфоратор BOSH
+               </span>
                <span class="catalog-item-title">
-              Перфоратор BOSH 12345
-              </span>
-            </h3>
-            <span class ="catalog-item-discount"> 32 500 </span>
-            <p>
-              <a class="catalog-item-price-button" href="#">25 500</a>
-            </p>
-            <p>
+               BFG 6000
+               </span>
+              </h3>
+              <ul class ="actions">
+                 <li class = "actionn-buy"> <a class ="visually-hidden" href = "#"> Купить </a> </li>
+                 <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
+              </ul>
+              <p>
+                <span class ="catalog-item-discount"> 30 500 Р.</span>
+                 <a class="catalog-item-price-button" href="#">25 500 Р.</a>
+              </p>
+              <p>
+                 <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
+              </p>
+           </li>
+           <li class = "catalog-item">
+             <h3>
+               <span class="catalog-item-category">
+               Перфоратор BOSH
+               </span>
+               <span class="catalog-item-title">
+               BFG 2000
+               </span>
+             </h3>
+             <ul class ="actions">
+                <li class = "actionn-buy"> <a class ="visually-hidden" href = "#"> Купить </a> </li>
+                <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
+             </ul>
+             <p>
+               <span class ="popular-item-new"> new </span>
+               <a class="catalog-item-price-button" href="#">12 500 Р.</a>
+             </p>
+             <p>
+                <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
+             </p>
+           </li>
+           <li class = "catalog-item">
+             <h3>
+               <span class="catalog-item-category">
+               Перфоратор BOSH
+               </span>
+               <span class="catalog-item-title">
+               BFG 3000
+               </span>
+             </h3>
+             <ul class ="actions">
+               <li class = "actionn-buy"> <a class ="visually-hidden" href = "#"> Купить </a> </li>
+               <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
+             </ul>
+             <p>
+              <span class ="catalog-item-discount"> 22 500 Р.</span>
+               <a class="catalog-item-price-button" href="#">15 500 Р.</a>
+             </p>
+             <p>
+               <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
+             </p>
+           </li>
+           <li class = "catalog-item">
+             <h3>
+               <span class="catalog-item-category">
+               Перфоратор BOSH
+               </span>
+               <span class="catalog-item-title">
+               BFG 6000
+               </span>
+             </h3>
+             <ul class ="actions">
+               <li class = "actionn-buy"> <a class ="visually-hidden" href = "#"> Купить </a> </li>
+               <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
+             </ul>
+             <p>
+               <span class ="catalog-item-discount"> 30 500 Р.</span>
+               <a class="catalog-item-price-button" href="#">25 500 Р.</a>
+             </p>
+             <p>
               <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
-            </p>
-          </li>
-          <li class = "catalog-item">
-            <h3>
-              <span class="catalog-item-title">
-             Перфоратор BOSH 12345
-             </span>
-            </h3>
-            <span class ="catalog-item-discount"> 32 500 </span>
-            <p>
-             <a class="catalog-item-price-button" href="#">25 500</a>
-            </p>
-            <p>
-             <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
-            </p>
-         </li>
-         <li class = "catalog-item">
-           <h3>
-             <span class="catalog-item-title">
-            Перфоратор BOSH 12345
-             </span>
-           </h3>
-           <span class ="catalog-item-discount"> 32 500 </span>
-          <p>
-            <a class="catalog-item-price-button" href="#">25 500</a>
-          </p>
-          <p>
-            <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
-          </p>
-        </li>
-        <li class = "catalog-item">
-          <h3>
-            <span class="catalog-item-title">
-           Перфоратор BOSH 12345
-           </span>
-          </h3>
-         <span class ="catalog-item-discount"> 32 500 </span>
-         <p>
-           <a class="catalog-item-price-button" href="#">25 500</a>
-         </p>
-         <p>
-           <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
-         </p>
-       </li>
-       <li class = "catalog-item">
-         <h3>
-           <span class="catalog-item-title">
-          Перфоратор BOSH 12345
-          </span>
-         </h3>
-        <span class ="catalog-item-discount"> 32 500 </span>
-        <p>
-          <a class="catalog-item-price-button" href="#">25 500</a>
-        </p>
-        <p>
-          <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
-        </p>
-      </li>
-      <li class = "catalog-item">
-        <h3>
-          <span class="catalog-item-title">
-         Перфоратор BOSH 12345
-         </span>
-        </h3>
-       <span class ="catalog-item-discount"> 32 500 </span>
-       <p>
-         <a class="catalog-item-price-button" href="#">25 500</a>
-       </p>
-       <p>
-         <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
-       </p>
-     </li>
-     <li class = "catalog-item">
-       <h3>
-         <span class="catalog-item-title">
-        Перфоратор BOSH 12345
-        </span>
-       </h3>
-      <span class ="catalog-item-discount"> 32 500 </span>
-      <p>
-        <a class="catalog-item-price-button" href="#">25 500</a>
-      </p>
-      <p>
-        <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
-      </p>
-    </li>
-    <li class = "catalog-item">
-      <h3>
-        <span class="catalog-item-title">
-       Перфоратор BOSH 12345
-       </span>
-      </h3>
-     <span class ="catalog-item-discount"> 32 500 </span>
-     <p>
-       <a class="catalog-item-price-button" href="#">25 500</a>
-     </p>
-     <p>
-       <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
-     </p>
-   </li>
-		</ul>
-		<ul class="pagination-list">
-          <li class="pagination-item">1</li>
-          <li class="pagination-item">2</li>
-          <li class="pagination-item">3</li>
-          <li class="pagination-item-next">Следующая</li>
+             </p>
+           </li>
+           <li class = "catalog-item">
+             <h3>
+               <span class="catalog-item-category">
+               Перфоратор BOSH
+               </span>
+               <span class="catalog-item-title">
+               BFG 2000
+               </span>
+             </h3>
+             <ul class ="actions">
+               <li class = "actionn-buy"> <a class ="visually-hidden" href = "#"> Купить </a> </li>
+               <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
+             </ul>
+             <p>
+               <span class ="popular-item-new"> new </span>
+               <a class="catalog-item-price-button" href="#">12 500 Р.</a>
+             </p>
+             <p>
+               <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
+             </p>
+            </li>
+            <li class = "catalog-item">
+              <h3>
+                <span class="catalog-item-category">
+                Перфоратор BOSH
+                </span>
+                <span class="catalog-item-title">
+                BFG 3000
+                </span>
+              </h3>
+              <ul class ="actions">
+                <li class = "actionn-buy"> <a class ="visually-hidden" href = "#"> Купить </a> </li>
+                <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
+              </ul>
+              <p>
+                <span class ="catalog-item-discount"> 22 500 Р.</span>
+                <a class="catalog-item-price-button" href="#">15 500 Р.</a>
+              </p>
+              <p>
+                <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
+              </p>
+            </li>
+            <li class = "catalog-item">
+              <h3>
+                <span class="catalog-item-category">
+                Перфоратор BOSH
+                </span>
+                <span class="catalog-item-title">
+                BFG 6000
+                </span>
+              </h3>
+              <ul class ="actions">
+                <li class = "actionn-buy"> <a class ="visually-hidden" href = "#"> Купить </a> </li>
+                <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
+              </ul>
+              <p>
+                <span class ="catalog-item-discount"> 30 500 Р.</span>
+                <a class="catalog-item-price-button" href="#">25 500 Р.</a>
+              </p>
+              <p>
+                <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
+              </p>
+            </li>
+            <li class = "catalog-item">
+              <h3>
+                <span class="catalog-item-category">
+                Перфоратор BOSH
+                </span>
+                <span class="catalog-item-title">
+                BFG 2000
+                </span>
+              </h3>
+              <ul class ="actions">
+                <li class = "actionn-buy"> <a class ="visually-hidden" href = "#"> Купить </a> </li>
+                <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
+              </ul>
+              <p>
+                <span class ="catalog-item-discount"> new </span>
+                <a class="catalog-item-price-button" href="#">12 500 Р.</a>
+              </p>
+              <p>
+                <img src = "http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSH 12345">
+              </p>
+            </li>
+		      </ul>
+		     <ul class="pagination-list">
+          <li class="pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href ="#">2</a></li>
+          <li class="pagination-item"><a href ="#">3</a></li>
+          <li class="pagination-item-next"><a href ="#">Следующая</a></li>
         </ul>
-		<section class = "about-perforators">
-		<h2> ПАРА СЛОВ О ПЕРФОРАТОРАХ </h2>
-		<p>
-		Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-		Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br>ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-		</p>
+       </section>
+		   <section class = "about-perforators">
+		     <h2> ПАРА СЛОВ О ПЕРФОРАТОРАХ </h2>
+		     <p>
+		     Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+		     Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br>ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+		     </p>
+      </section>
 		</main>
     <footer class = "main-footer">
-       <nav class = "footer-top-navigation">
-       <p class = "footer-logo">
-       <a href="#"> <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип магазина «Техномарт»"> </a>
-       <ul class = "footer-top-navigation-site">
-         <li><a href="#">Компания</a></li>
-         <li><a href="#">Каталог</a></li>
-         <li><a href="#">Новости</a></li>
-         <li><a href="#">Спецпредложения</a></li>
-         <li><a href="#">Доставка</a></li>
-         <li><a href="#">Контакты</a></li>
-     </ul>
-      <p class = "important-information-adress">
-    г. Санкт-Петербург, ул. Б.Конюшенная д. 19/8
-      </p>
-      <ul class = "footer-bottom-navigation-site">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Иснтрумент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-     </ul>
+	     <div class = "footer-information">
+			 <p class = "footer-information-logo">
+			 <a href="#"> <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип магазина «Техномарт»"> </a>
+       </p>
+       <p class = "footer-information-adress">
+       г. Санкт-Петербург, ул. Б.Конюшенная д. 19/8
+       </p>
+       </div>
+       <nav class = "footer-navigation">
+         <ul class = "footer-navigation-site">
+           <li><a href="#">Компания</a></li>
+           <li><a href="#">Новости</a></li>
+           <li><a href="#">Каталог</a></li>
+           <li><a href="#">Доставка</a></li>
+           <li><a href="#">Контакты</a></li>
+		     </ul>
+		     <ul class = "footer-navigation-asassortment">
+           <li><a href="#">Материалы</a></li>
+           <li><a href="#">Техника</a></li>
+           <li><a href="#">Иснтрумент</a></li>
+           <li><a href="#">Спецпредложения</a></li>
+		     </ul>
       </nav>
-
-       <p class = "footer-copyright">
-        © 2010–2017 Компания «Техномарт» <br>
-        Все права защищены
-      </p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-      </div>
-      <p class = "footer-feedback">
+      <div class = "footer-support">
+	         <p class = "footer-support-copyright">
+	         © 2010–2017 Компания «Техномарт» <br>
+	         Все права защищены
+          </p>
+          <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+	        <p class = "footer-support-feedback">
           Обратная связь:<br>
-          <span class = "footer-feedback-email"> mail@htmlacademy.ru </span>
-      </p>
-      <p class="footer-creators">
-        Разработано <br>
-          <a class="footer-creators-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </p>
+            <span class = "footer-support-email"> mail@htmlacademy.ru </span>
+	        </p>
+          <p class="footer-support-creators">
+          Разработано <br>
+            <a class="footer-creators-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          </p>
+      </div>
     </footer>
   </body>
  </html>
