@@ -8,31 +8,36 @@
     <header class = "main-header">
         <div class = "header-top-navigation">
           <a class="main-header-logo" href="#">ТЕХНОМАРТ</a>
-          <span class = "search-header-top-navigation">Поиск</span>
+
+          <form action="https://htmlacademy.ru/" method="post">
+            <label for="search" class ="visually-hidden"> Поиск</label>
+            <input type = "search" value ="Поиск:" id ="search">
+          </form>
+
+
           <ul class = "order-tools">
             <li><a href="#">Закладки</a> </li>
             <li><a href="#">Корзина</a></li>
             <li><a href="#">Оформить заказ</a></li>
           </ul>
         </div>
-  		  <div class = "header-information">
+        <div class = "header-information">
           <strong class = "header-information-description">Интернет магазин строительных материалов и инструсентов для ремонта </strong>
           <p class = "important-information-tel">
-  		    +7 (812) 555-05-55
-  		    </p>
-  		    <p class = "header-information-adress">
-  		    г. Санкт-Петербург, ул. Б.Конюшенная д. 19/8
+      +7 (812) 555-05-55
+          </p>
+          <p class = "header-information-adress">
+      г. Санкт-Петербург, ул. Б.Конюшенная д. 19/8
           </p>
         </div>
         <div class = "user-navigation">
-          <span> Равшан Джамшутович </span>
           <ul class = "user-navigation-list">
-            <li><a href="#">Мои заказы</a></li>
-            <li><a href="#">Личный кабинет</a></li>
-  		    </ul>
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Регистрация</a></li>
+          </ul>
         </div>
         <nav class = "header-bottom-navigation">
-  		     <ul class = "header-bottom-navigation-site">
+           <ul class = "header-bottom-navigation-site">
              <li><a href="#">Главная</a></li>
              <li><a href="#">Компания</a></li>
              <li><a href="#">Каталог</a></li>
@@ -40,9 +45,9 @@
              <li><a href="#">Спецпредложения</a></li>
              <li><a href="#">Доставка</a></li>
              <li><a href="#">Контакты</a></li>
-  		     </ul>
+           </ul>
          </nav>
-  	 </header>
+     </header>
      <main class = "container">
 	      <ul class="breadcrumbs">
 	         <li><a href="#">Каталог</a></li>
@@ -51,8 +56,69 @@
         </ul>
 	      <h1 class="page-title">Перфораторы</h1>
         <section class="filters">
-          <h2 class = "visually-hidden"> Фильтры </h2>
-        <!-- Здесь будутт формы -->
+          <h2> Фильтр: </h2>
+          <form action="https://htmlacademy.ru/" method="post"
+          oninput = "daysoutput.value=dayscount.value.">
+            <fieldset style = width ="200px">
+              <legend> Цена: </legend>
+              0 <input type="range" min="0" max="30000" id ="dayscount" value ="0"> 30 000
+            </fieldset>
+            <fieldset>
+              <legend> Производители: </legend>
+              <ul>
+                <li class = "filter-option">
+                  <input class = "visually-hidden filter-input filter-input-checkbox"
+                   type = "checkbox" name ="Bosh" id = "filter-bosh">
+                  <label for = "filter-bosh">
+                  Bosh
+                  </label>
+                </li>
+                <li class = "filter-option">
+                  <input class = "visually-hidden filter-input filter-input-checkbox"
+                   type = "checkbox" name ="Интерскол" id = "filter-interscol">
+                  <label for = "filter-interscol">
+                  Интерскол
+                  </label>
+                </li>
+                <li class = "filter-option">
+                  <input class = "visually-hidden filter-input filter-input-checkbox"
+                   type = "checkbox" name ="Makita" id = "filter-makita">
+                  <label for = "filter-makita">
+                  Makita
+                  </label>
+                </li>
+                <li class = "filter-option">
+                  <input class = "visually-hidden filter-input filter-input-checkbox"
+                   type = "checkbox" name ="Dewalt" id = "filter-dewalt">
+                  <label for = "filter-dewalt">
+                  Dewalt
+                  </label>
+                </li>
+                <li class = "filter-option">
+                  <input class = "visually-hidden filter-input filter-input-checkbox"
+                  type = "checkbox" name ="Hitachi" id = "filter-hitachi">
+                  <label for = "filter-hitachi">
+                  Hitachi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+             <legend> Питание:</legend>
+             <ul>
+               <li class = "filter-option">
+                 <input class = "visually-hidden filter-input filter-input-radio"
+                  type = "radio" name ="power" value = "battery" id = "battery">
+                 <label for = "battery">Аккумуляторные </label>
+               </li>
+               <li class = "filter-option">
+                 <input class = "visually-hidden filter-input filter-input-radio"
+                  type = "radio" name ="power" value = "battery" id = "non-battery">
+                 <label for = "non-battery">Сетевые</label>
+               </li>
+              </ul>
+            </fieldset>
+          </form>
         </section>
 	      <section class ="catalog">
           <h2 class = "visually-hidden"> Каталог товаров </h2>
