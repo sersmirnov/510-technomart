@@ -7,7 +7,7 @@
   <body>
     <header class = "main-header">
         <div class = "header-top-navigation">
-          <a class="main-header-logo" href="#">ТЕХНОМАРТ</a>
+          <a class="main-header-logo" href="file:///C:/Users/Sergey/Documents/GitHub/510-technomart/index.html">ТЕХНОМАРТ</a>
 
           <form action="https://htmlacademy.ru/" method="post">
             <label for="search" class ="visually-hidden"> Поиск</label>
@@ -31,10 +31,11 @@
           </p>
         </div>
         <div class = "user-navigation">
-          <ul class = "user-navigation-list">
-            <li><a href="#">Войти</a></li>
-            <li><a href="#">Регистрация</a></li>
-          </ul>
+           <span> Равшан Джамшутович </span>
+           <ul class = "user-navigation-list">
+             <li><a href="#">Мои заказы</a></li>
+             <li><a href="#">Личный кабинет</a></li>
+   		      </ul>
         </div>
         <nav class = "header-bottom-navigation">
            <ul class = "header-bottom-navigation-site">
@@ -57,9 +58,8 @@
 	      <h1 class="page-title">Перфораторы</h1>
         <section class="filters">
           <h2> Фильтр: </h2>
-          <form action="https://htmlacademy.ru/" method="post"
-          oninput = "daysoutput.value=dayscount.value.">
-            <fieldset style = width ="200px">
+          <form action="https://htmlacademy.ru/" method="post">
+            <fieldset>
               <legend> Цена: </legend>
               0 <input type="range" min="0" max="30000" id ="dayscount" value ="0"> 30 000
             </fieldset>
@@ -118,6 +118,7 @@
                </li>
               </ul>
             </fieldset>
+            <button class="button" type="submit">Показать</button>
           </form>
         </section>
 	      <section class ="catalog">
@@ -147,8 +148,9 @@
                   <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
                 </ul>
                 <p>
+                  <span class ="popular-item-new visually-hidden"> new </span>
                   <span class ="catalog-item-discount"> 22 500 Р.</span>
-                  <a class="catalog-item-price-button" href="#">15 500 Р.</a>
+                  <span class ="catalog-item-price">15 500 Р.</span>
                </p>
                <p>
                   <img src = "img/Perforator_BOSH_BFG_3000.png" width="220" height="159" alt="Перфоратор BOSH 3000">
@@ -168,8 +170,9 @@
                  <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
               </ul>
               <p>
+                <span class ="popular-item-new visually-hidden"> new </span>
                 <span class ="catalog-item-discount"> 30 500 Р.</span>
-                 <a class="catalog-item-price-button" href="#">25 500 Р.</a>
+                <span class="catalog-item-price">25 500 Р.</span>
               </p>
               <p>
                  <img src = "img/Perforator_BOSH_BFG_6000.png" width="220" height="159" alt="Перфоратор BOSH 6000">
@@ -190,7 +193,7 @@
              </ul>
              <p>
                <span class ="popular-item-new"> new </span>
-               <a class="catalog-item-price-button" href="#">12 500 Р.</a>
+               <span class ="catalog-item-price">12 500 Р.</span>
              </p>
              <p>
                 <img src = "img/Perforator_BOSH_BFG_2000.png" width="220" height="159" alt="Перфоратор BOSH 2000">
@@ -210,8 +213,9 @@
                <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
              </ul>
              <p>
-              <span class ="catalog-item-discount"> 22 500 Р.</span>
-               <a class="catalog-item-price-button" href="#">15 500 Р.</a>
+               <span class ="popular-item-new visually-hidden"> new </span>
+               <span class ="catalog-item-discount"> 22 500 Р.</span>
+               <span class ="catalog-item-price">15 500 Р.</span>
              </p>
              <p>
                <img src = "img/Perforator_BOSH_BFG_3000.png" width="220" height="159" alt="Перфоратор BOSH 3000">
@@ -231,8 +235,9 @@
                <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
              </ul>
              <p>
+               <span class ="popular-item-new"> new </span>
                <span class ="catalog-item-discount"> 30 500 Р.</span>
-               <a class="catalog-item-price-button" href="#">25 500 Р.</a>
+               <span class ="catalog-item-price">25 500 Р.</span>
              </p>
              <p>
               <img src = "img/Perforator_BOSH_BFG_6000.png" width="220" height="159" alt="Перфоратор BOSH 6000">
@@ -252,8 +257,8 @@
                <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
              </ul>
              <p>
-               <span class ="popular-item-new"> new </span>
-               <a class="catalog-item-price-button" href="#">12 500 Р.</a>
+               <span class ="popular-item-new visually-hidden"> new </span>
+               <span class ="catalog-item-price">12 500 Р.</span>
              </p>
              <p>
                <img src = "img/Perforator_BOSH_BFG_2000.png" width="220" height="159" alt="Перфоратор BOSH 2000">
@@ -274,8 +279,9 @@
               </ul>
               <p>
               </p>
+                <span class ="popular-item-new"> new </span>
                 <span class ="catalog-item-discount"> 22 500 Р.</span>
-                <a class="catalog-item-price-button" href="#">15 500 Р.</a>
+                <span class ="catalog-item-price">15 500 Р.</span>
               <p>
                 <img src = "img/Perforator_BOSH_BFG_3000.png" width="220" height="159" alt="Перфоратор BOSH 3000">
               </p>
@@ -294,8 +300,9 @@
                 <li class = "action-favorite"> <a class = "visually-hidden" href = "#"> В закладки </a> </li>
               </ul>
               <p>
+                <span class ="popular-item-new visually-hidden"> new </span>
                 <span class ="catalog-item-discount"> 30 500 Р.</span>
-                <a class="catalog-item-price-button" href="#">25 500 Р.</a>
+                <span class ="catalog-item-price">25 500 Р.</span>
               </p>
               <p>
                 <img src = "img/Perforator_BOSH_BFG_6000.png" width="220" height="159" alt="Перфоратор BOSH 6000">
@@ -316,7 +323,7 @@
               </ul>
               <p>
                 <span class ="catalog-item-discount"> new </span>
-                <a class="catalog-item-price-button" href="#">12 500 Р.</a>
+                <span class ="catalog-item-price">12 500 Р.</span>
               </p>
               <p>
                 <img src = "img/Perforator_BOSH_BFG_2000.png" width="220" height="159" alt="Перфоратор BOSH 2000">
@@ -383,4 +390,14 @@
       </div>
     </footer>
   </body>
+  <section class="modal modal-cart">
+      <h2> Товар добавлен в корзину!</h2>
+      <img src="http://placehold.it/40x80" width="40" height="80"
+      alt="Зеленая галочка">
+      <button class="modal-close" type="button">Закрыть</button>
+      <div class = "modal-cart-buttons">
+        <button class="modal-buy" type="button">Оформить заказ</button>
+        <button class="modal-continue" type="button">Продолжить покупки</button>
+      </div>
+  </section>
  </html>

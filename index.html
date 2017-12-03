@@ -7,7 +7,7 @@
   <body>
   <header class = "main-header">
       <div class = "header-top-navigation">
-        <a class="main-header-logo" href="#">ТЕХНОМАРТ</a>
+        <span class = "logo"> ТЕХНОМАРТ</span>
 
         <form action="https://htmlacademy.ru/" method="post">
           <label for="search" class ="visually-hidden"> Поиск</label>
@@ -80,18 +80,26 @@
         <div class = "asassortment-slide1">
           <span> Перфоратры </span>
           <span> Настоящие мужские игрушки</span>
-          <a href="#"> Открыть каталог</a>
+          <a href="file:///C:/Users/Sergey/Documents/GitHub/510-technomart/Catalog.html"> Открыть каталог</a>
           <img src="img/slider_1.jpg" width="620" height="266"  alt="Перфоратры">
-          <span class="button-left"></span>
-          <span class="button-right"></span>
+          <button class ="button gallery-button gallery-button-back" type="button">
+          Назад
+          </button>
+          <button class ="button gallery-button gallery-button-next" type="button">
+          Вперед
+          </button>
         </div>
         <div class = "asassortment-slide2">
           <span> Дрели </span>
           <span> Соседям на радость</span>
-          <a href="#"> Открыть каталог</a>
+          <a href="file:///C:/Users/Sergey/Documents/GitHub/510-technomart/Catalog.html"> Открыть каталог</a>
           <img src="img/slider_2.jpg" width="620" height="266" alt="Дрели">
-          <span class="button-left"></span>
-          <span class="button-right"></span>
+          <button class ="button gallery-button gallery-button-back" type="button">
+          Назад
+          </button>
+          <button class ="button gallery-button gallery-button-next" type="button">
+          Вперед
+          </button>
         </div>
 	     </section>
        <section class ="popular-items">
@@ -108,8 +116,9 @@
                   </span>
 			          </h3>
                 <p>
+                  <span class ="popular-item-new visually-hidden"> new </span>
 			            <span class ="popular-item-discount"> 32 500 Р. </span>
-                  <a class="popular-item-price-button" href="#">25 500 Р.</a>
+                  <span class="popular-item-price">25 500 Р.</span>
 			          </p>
 			          <p>
                   <img src = "img/Perforator_BOSH_BFG_9000.png" width="220" height="159" alt="Перфоратор BOSH 9000">
@@ -126,8 +135,9 @@
                   </span>
                </h3>
                 <p>
+                 <span class ="popular-item-new visually-hidden"> new </span>
                  <span class ="popular-item-discount"> 22 500 Р.</span>
-                  <a class="popular-item-price-button" href="#">15 500 Р.</a>
+                 <span class="popular-item-price">15 500 Р.</span>
                </p>
                <p>
                   <img src = "img/Perforator_BOSH_BFG_3000.png" width="220" height="159" alt="Перфоратор BOSH 3000">
@@ -143,8 +153,9 @@
                  </span>
               </h3>
                <p>
+                <span class ="popular-item-new visually-hidden"> new </span>
                 <span class ="popular-item-discount"> 30 500 </span>
-                 <a class="popular-item-price-button" href="#">25 500</a>
+                <span class="popular-item-price">25 500</span>
               </p>
               <p>
                  <img src = "img/Perforator_BOSH_BFG_6000.png" width="220" height="159" alt="Перфоратор BOSH 6000">
@@ -162,7 +173,7 @@
              </h3>
               <p>
                <span class ="popular-item-new"> new </span>
-                <a class="popular-item-price-button" href="#">12 500</a>
+                <span class="popular-item-price">12 500</span>
              </p>
              <p>
                 <img src = "img/Perforator_BOSH_BFG_2000.png" width="220" height="159" alt="Перфоратор BOSH 2000">
@@ -261,7 +272,7 @@
 	              заехав в наш офис:
 	           </p>
 	           <p class = "contacts-image">
-		            <a href="#"> <img src="img/Map.png" alt="Карта проезда"> </a>
+		            <a href="#"> <img src="img/map-mini.png" alt="Карта проезда"> </a>
 		         </p>
 	           <a class="contacts-button" href="#"> Заблудились? Напишите нам! </a>
 	         </section>
@@ -313,6 +324,8 @@
   </body>
   <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
+      <img src="img/map-full.png" width="970" height="476"
+      alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <button class="modal-close" type="button">Закрыть</button>
   </section>
 </html>
