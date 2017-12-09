@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;PT+Sans&amp;PT+Sans+Narrow&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type = "text/css">
   </head>
   <body>
   <header class = "main-header">
@@ -14,7 +17,6 @@
           <input type = "search" value ="Поиск:" id ="search">
         </form>
 
-
         <ul class = "order-tools">
           <li><a href="#">Закладки</a> </li>
           <li><a href="#">Корзина</a></li>
@@ -22,7 +24,8 @@
         </ul>
       </div>
 		  <div class = "header-information">
-        <strong class = "header-information-description">Интернет магазин строительных материалов и инструсентов для ремонта </strong>
+        <p class = "header-information-description">Интернет магазин<br>
+           строительных материалов<br> и инструсентов для ремонта </p>
         <p class = "important-information-tel">
 		+7 (812) 555-05-55
 		    </p>
@@ -52,59 +55,58 @@
 	    <section class ="asassortment">
         <h2 class="visually-hidden">Ассортимент</h2>
         <div class = "asassortment-materials">
-          <span> Материалы </span>
-          <span> New </span>
+          <span class = "name"> Материалы </span>
+          <span class = "new"> new </span>
           <a href="#"> На любой вкус </a>
-          <img src="http://placehold.it/150x100" alt="Материалы">
         </div>
         <div class = "asassortment-tools">
-          <span> Инструменты </span>
-          <a href="#"> На любой вкус </a>
-          <img src="http://placehold.it/150x100" alt="Инструменты">
+          <span class = "name">  Инструменты </span>
+          <a href="#"> На все случаи </a>
         </div>
         <div class = "asassortment-technique">
-          <span> Техника </span>
+          <span class = "name">  Техника </span>
           <a href="#"> Для стройки </a>
-          <img src="http://placehold.it/150x100" alt="Техника">
         </div>
         <div class = "asassortment-sale">
-          <span> Скидки </span>
+          <span class = "name">  Скидки </span>
           <a href="#"> На 350 товаров </a>
-          <img src="http://placehold.it/150x100" alt="Скидки">
         </div>
         <div class = "asassortment-delivery">
-          <span> Доставка </span>
+          <span class = "name">  Доставка </span>
           <a href="#"> Бесплатно </a>
-          <img src="http://placehold.it/150x100" alt="Доставка">
         </div>
-        <div class = "asassortment-slide1">
-          <span> Перфоратры </span>
-          <span> Настоящие мужские игрушки</span>
-          <a href="file:///C:/Users/Sergey/Documents/GitHub/510-technomart/Catalog.html"> Открыть каталог</a>
-          <img src="img/slider_1.jpg" width="620" height="266"  alt="Перфоратры">
-          <button class ="button gallery-button gallery-button-back" type="button">
-          Назад
-          </button>
-          <button class ="button gallery-button gallery-button-next" type="button">
-          Вперед
-          </button>
-        </div>
-        <div class = "asassortment-slide2">
-          <span> Дрели </span>
-          <span> Соседям на радость</span>
-          <a href="file:///C:/Users/Sergey/Documents/GitHub/510-technomart/Catalog.html"> Открыть каталог</a>
-          <img src="img/slider_2.jpg" width="620" height="266" alt="Дрели">
-          <button class ="button gallery-button gallery-button-back" type="button">
-          Назад
-          </button>
-          <button class ="button gallery-button gallery-button-next" type="button">
-          Вперед
-          </button>
+        <div class = "slides">
+          <div class = "asassortment-slide1">
+            <span class = "name"> Перфоратры </span>
+            <span class = "description"> Настоящие мужские игрушки</span>
+            <a class = "open-catalog button" href="Catalog.html"> Открыть каталог</a>
+            <img src="img/slider_1.jpg" width="620" height="266"  alt="Перфоратры">
+            <button class ="button gallery-button gallery-button-back" type="button">
+              Назад
+            </button>
+            <button class ="button gallery-button gallery-button-next" type="button">
+              Вперед
+            </button>
+          </div>
+          <div class = "asassortment-slide2">
+            <span class = "name"> Дрели </span>
+            <span class = "description"> Соседям на радость</span>
+            <a class = "open-catalog button" href="Catalog.html"> Открыть каталог</a>
+            <img src="img/slider_2.jpg" width="620" height="266" alt="Дрели">
+            <button class ="button gallery-button gallery-button-back" type="button">
+              Назад
+            </button>
+            <button class ="button gallery-button gallery-button-next" type="button">
+              Вперед
+            </button>
+          </div>
         </div>
 	     </section>
        <section class ="popular-items">
-         <h2> Популярные товары </h2>
-         <a class="popular-items-button" href ="#"> Все популярные товары </a>
+         <div class = "popular-items-head">
+          <h2> Популярные товары: </h2>
+          <a class="popular-items button" href ="#"> Все популярные товары </a>
+         </div>
          <ul class= "popular-items-list">
            <li class = "popular-item">
 			          <h3>
@@ -183,8 +185,10 @@
 	      </section>
 
 	      <section class ="manufacturers">
-		        <h2> Популярные производители</h2>
-		        <a class ="manufacturers-button" href ="#"> Все производители</a>
+            <div class = "manufacturers-head">
+		          <h2> Популярные производители:</h2>
+		            <a class ="all-manufacturers button" href ="#"> Все производители</a>
+            </div>
 	          <ul class= "popular-manufacturers">
 		            <li> <a href="#"> <img src="img/Bosh.png" alt="Производитель «BOSH»"></a></li>
 		            <li> <a href="#"> <img src="img/Makita.png" alt="Производитель «Makita»"></a></li>
@@ -263,7 +267,7 @@
 		            <li> Автотрейдинг </li>
 		            <li> ЖелДорЭкспедиция </li>
 	         </ul>
-	         <a class="infromation-button" href="#"> Подробнее о компании </a>
+	         <a class="infromation button" href="#"> Подробнее о компании </a>
 	        </section>
 	        <section class ="contacts">
 	           <h2> Контакты </h2>
@@ -274,12 +278,12 @@
 	           <p class = "contacts-image">
 		            <a href="#"> <img src="img/map-mini.png" alt="Карта проезда"> </a>
 		         </p>
-	           <a class="contacts-button" href="#"> Заблудились? Напишите нам! </a>
+	           <a class="contacts button" href="#"> Заблудились? Напишите нам! </a>
 	         </section>
 	  </main>
 	  <footer class = "main-footer">
 	     <div class = "footer-information">
-			     <p class = "footer-information-logo">
+			     <span class = "logo">
              <a href="#">ТЕХНОМАРТ</a>
            </p>
            <p class = "footer-information-adress">
@@ -306,7 +310,7 @@
 	      © 2010–2017 Компания «Техномарт» <br>
 	      Все права защищены
           </p>
-          <ul>
+          <ul class = "social-networks">
             <li><a class="social-button" href="#">Вконтакте</a></li>
             <li><a class="social-button" href="#">Фейсбук</a></li>
             <li><a class="social-button" href="#">Инстаграм</a></li>
@@ -327,5 +331,17 @@
         alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <button class="modal-close" type="button">Закрыть</button>
     </section>
+    <section class="modal modal-write">
+      <button class="modal-close" type="button">Закрыть</button>
+      <form  class= "write-us" action="https://htmlacademy.ru/" method="post">
+        <label for ="name"> Ваше имя:</label>
+        <input class = "name" type = "text" value ="Представьтесь, пожалуйста" id ="name">
+        <label for="email"> Ваш e-mail:</label>
+        <input class = "email" type = "email" value ="Для отправки ответа" id ="email">
+        <label for="letter"> Текст пиьсма:</label>
+        <textarea  class = "letter" name = "letter" id ="letter">В свободной форме
+        </textarea>
+        <button class="modal-send" type="button">Отправить</button>
+    </form>
   </body>
 </html>
